@@ -1,0 +1,86 @@
+ALTER TABLE dbo.Nha_cung_cap ADD Link VARCHAR(50)
+CREATE PROC getALlProduct
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p WHERE p.Trang_Thai=1
+END
+
+CREATE PROC getProductHot
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p WHERE p.Trang_Thai=1 ORDER BY p.Luot_xem DESC
+END
+
+
+CREATE PROC getProductNew
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p WHERE p.Trang_Thai=1 AND p.Ngay_Nhap>='2013-01-01' ORDER BY p.Ngay_Nhap DESC
+END
+
+CREATE PROC getProductSell
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p WHERE p.Trang_Thai=1 ORDER BY p.Luot_xem DESC
+END
+
+
+CREATE PROC getProductSale
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Khuyenmai km ON km.Ma_Giam_Gia = p.Ma_Giam_Gia WHERE p.Trang_Thai=1 AND km.Muc_do_giam_gia!=0 ORDER BY km.Ma_Giam_Gia DESC
+END
+
+CREATE PROC getSlide
+AS
+BEGIN
+	SELECT * FROM dbo.Slide s WHERE s.SlideStatus=1 ORDER BY s.SlideUuTien ASC
+END
+
+CREATE PROC getTitleDmc
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccha p WHERE p.Trang_thai=1 ORDER BY p.Do_uu_tien ASC
+END
+
+CREATE PROC getTrademark
+AS
+BEGIN
+	SELECT * FROM dbo.Nha_cung_cap p
+END
+
+CREATE PROC getTrademarkPhap
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Pháp'
+END
+
+CREATE PROC getTrademarkMi
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Mi'
+END
+
+CREATE PROC getTrademarkAnh
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Anh'
+END
+
+CREATE PROC getTrademarkDuc
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Ð?c'
+END
+
+CREATE PROC getTrademarkTayBanNha
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Tây Ban Nha'
+END
+
+CREATE PROC getTrademarkNga
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Nga'
+END
