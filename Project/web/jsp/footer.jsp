@@ -33,11 +33,7 @@
 
                         <!-- Item -->
                         <div class="item"> <a href=""><img src="../jsp/images/b-logo7.png" alt="polo-theme"></a> </div>
-                        <!-- End Item --> 
-
-                        <!-- Item -->
-                        <div class="item"> <a href=""><img src="../jsp/images/b-logo8.png" alt="polo-theme"></a> </div>
-                        <!-- End Item --> 
+                        <!-- End Item -->
 
                     </div>
                 </div>

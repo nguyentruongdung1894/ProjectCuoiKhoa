@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : head
     Created on : Jul 6, 2018, 10:43:31 AM
     Author     : ScorPius 31
@@ -53,6 +53,9 @@
     <link href='../jsp/css/font-awesome.css' rel='stylesheet' type='text/css' />
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
     <link href='../jsp/css/jgrowl.css' rel='stylesheet' type='text/css' />
     <link href='../jsp/css/styles.css' rel='stylesheet' type='text/css' />

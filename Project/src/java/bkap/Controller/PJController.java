@@ -50,6 +50,8 @@ public class PJController {
     @RequestMapping(value = "/about")
     public ModelAndView getAbout(){
         ModelAndView model=new ModelAndView("about");
+        List<ProductParent> listProductParent=pjmodel.getProductParent();
+        model.addObject("listProductParent", listProductParent);
         return model;
     }
     
@@ -68,12 +70,16 @@ public class PJController {
     @RequestMapping(value = "/new")
     public ModelAndView getNew(){
         ModelAndView model=new ModelAndView("new");
+        List<ProductParent> listProductParent=pjmodel.getProductParent();
+        model.addObject("listProductParent", listProductParent);
         return model;
     }
     
     @RequestMapping(value = "/contact")
     public ModelAndView getContact(){
         ModelAndView model=new ModelAndView("contact");
+        List<ProductParent> listProductParent=pjmodel.getProductParent();
+        model.addObject("listProductParent", listProductParent);
         return model;
     }
     
@@ -266,6 +272,13 @@ public class PJController {
         model.addObject("listProductParent", listProductParent);
         model.addObject("listtrademarkNga", listtrademarkNga);
         model.addObject("listTrademark", listTrademark); 
+        return model;
+    }
+    
+    @RequestMapping(value = "/checkout")
+    public ModelAndView getCheckout(){
+        ModelAndView model=new ModelAndView("checkout");
+        
         return model;
     }
 }

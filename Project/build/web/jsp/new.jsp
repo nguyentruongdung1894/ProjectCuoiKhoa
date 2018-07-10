@@ -65,7 +65,9 @@
         <link href='../jsp/css/jgrowl.css' rel='stylesheet' type='text/css' />
         <link href='../jsp/css/styles.css' rel='stylesheet' type='text/css' />
         <!-- Google Fonts -->
-        <link href='css/font.css' rel='stylesheet' type='text/css'>
+        <link href='../jsp/css/font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
         <script>
             var Bizweb = Bizweb || {};
             Bizweb.store = 'polo-theme.bizwebvietnam.net';
@@ -170,15 +172,15 @@
                                     <article class="blog_entry clearfix" >
                                         <header class="blog_entry-header clearfix">
                                             <div class="blog_entry-header-inner">
-                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="/tang-qua-gi-de-nguoi-nhan-thich">Tặng quà gì để người nhận thích?</a> </h3>
+                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="">Tặng quà gì để người nhận thích?</a> </h3>
                                             </div>
                                             <!--blog_entry-header-inner--> 
                                         </header>
                                         <div class="entry-content">
                                             <div class="featured-thumb">
-                                                <a href="/tang-qua-gi-de-nguoi-nhan-thich" title="Tặng quà gì để người nhận thích?">
+                                                <a href="" title="Tặng quà gì để người nhận thích?">
 
-                                                    <img src="images/quasinhnhat1.jpg" alt="Tặng quà gì để người nhận thích?">
+                                                    <img src="../jsp/images/quasinhnhat1.jpg" alt="Tặng quà gì để người nhận thích?">
 
                                                 </a>
                                             </div>
@@ -187,7 +189,7 @@
                                                 <p><p style="text-align: justify;">Tặng quà không có nghĩa là đem nó cho người nhận mà không hề quan tâm đến sở thích của người ấy, nó là cả một nghệ thuật mà bạn cần dành thời gian để suy nghĩ, lựa chọn, tìm hiểu về tính cách và hoàn cảnh sống của người nhận.</p></p>
 
                                             </div>
-                                            <p> <a class="btn" href="/tang-qua-gi-de-nguoi-nhan-thich">Xem chi tiết</a> </p>
+                                            <p> <a class="btn" href="">Xem chi tiết</a> </p>
                                         </div>
                                         <footer class="entry-meta"><time class="entry-date">08/12/2015</time></footer>
                                     </article>
@@ -195,15 +197,15 @@
                                     <article class="blog_entry clearfix" >
                                         <header class="blog_entry-header clearfix">
                                             <div class="blog_entry-header-inner">
-                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="/10-loai-socola-ngon-nhat-the-gioi">10 loại socola ngon nhất thế giới</a> </h3>
+                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="">10 loại socola ngon nhất thế giới</a> </h3>
                                             </div>
                                             <!--blog_entry-header-inner--> 
                                         </header>
                                         <div class="entry-content">
                                             <div class="featured-thumb">
-                                                <a href="/10-loai-socola-ngon-nhat-the-gioi" title="10 loại socola ngon nhất thế giới">
+                                                <a href="" title="10 loại socola ngon nhất thế giới">
 
-                                                    <img src="images/2.jpg" alt="10 loại socola ngon nhất thế giới">
+                                                    <img src="../jsp/images/2.jpg" alt="10 loại socola ngon nhất thế giới">
 
                                                 </a>
                                             </div>
@@ -212,7 +214,7 @@
                                                 <p><p style="text-align: justify;">Từ những thanh chocolate đen nguyên chất, cho tới kẹo chocolate có nhân rượu màu, hay những thỏi chocolate đắng, tất cả đều ngon đến ngỡ ngàng. Bạn sẽ chẳng bao giờ hối tiếc khi lỡ đam mê các loại bánh kẹo của những hãng này.</p></p>
 
                                             </div>
-                                            <p> <a class="btn" href="/10-loai-socola-ngon-nhat-the-gioi">Xem chi tiết</a> </p>
+                                            <p> <a class="btn" href="">Xem chi tiết</a> </p>
                                         </div>
                                         <footer class="entry-meta"><time class="entry-date">08/12/2015</time></footer>
                                     </article>
@@ -220,15 +222,15 @@
                                     <article class="blog_entry clearfix" >
                                         <header class="blog_entry-header clearfix">
                                             <div class="blog_entry-header-inner">
-                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="/goi-y-chon-hoa-lam-qua-tang">Gợi ý chọn hoa làm quà tặng</a> </h3>
+                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="">Gợi ý chọn hoa làm quà tặng</a> </h3>
                                             </div>
                                             <!--blog_entry-header-inner--> 
                                         </header>
                                         <div class="entry-content">
                                             <div class="featured-thumb">
-                                                <a href="/goi-y-chon-hoa-lam-qua-tang" title="Gợi ý chọn hoa làm quà tặng">
+                                                <a href="" title="Gợi ý chọn hoa làm quà tặng">
 
-                                                    <img src="images/hoa-hong-giay-don-gian.jpg" alt="Gợi ý chọn hoa làm quà tặng">
+                                                    <img src="../jsp/images/hoa-hong-giay-don-gian.jpg" alt="Gợi ý chọn hoa làm quà tặng">
 
                                                 </a>
                                             </div>
@@ -237,7 +239,7 @@
                                                 <p><p style="text-align: justify;">Tặng hoa là gửi đi một thông điệp ý nghĩa thường mang lại cảm xúc của tình yêu và hạnh phúc bằng hương thơm và vẻ đẹp tuyệt đối của những bông hoa. Kèm theo hoa những tấm thiệp chân thành tự làm, sôcôla và các quà tặng thủ công khác.</p></p>
 
                                             </div>
-                                            <p> <a class="btn" href="/goi-y-chon-hoa-lam-qua-tang">Xem chi tiết</a> </p>
+                                            <p> <a class="btn" href="">Xem chi tiết</a> </p>
                                         </div>
                                         <footer class="entry-meta"><time class="entry-date">08/12/2015</time></footer>
                                     </article>
@@ -245,15 +247,15 @@
                                     <article class="blog_entry clearfix" >
                                         <header class="blog_entry-header clearfix">
                                             <div class="blog_entry-header-inner">
-                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="/bi-quyet-tang-qua-y-nghia">Bí quyết tặng quà ý nghĩa</a> </h3>
+                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="">Bí quyết tặng quà ý nghĩa</a> </h3>
                                             </div>
                                             <!--blog_entry-header-inner--> 
                                         </header>
                                         <div class="entry-content">
                                             <div class="featured-thumb">
-                                                <a href="/bi-quyet-tang-qua-y-nghia" title="Bí quyết tặng quà ý nghĩa">
+                                                <a href="" title="Bí quyết tặng quà ý nghĩa">
 
-                                                    <img src="images/gift-guide.jpg" alt="Bí quyết tặng quà ý nghĩa">
+                                                    <img src="../jsp/images/gift-guide.jpg" alt="Bí quyết tặng quà ý nghĩa">
 
                                                 </a>
                                             </div>
@@ -262,7 +264,7 @@
                                                 <p><p style="text-align: justify;">Dù món quà của bạn là gì đi nữa thì sự chân thành vẫn là yếu tố quan trọng nhất. Khi tặng quà cho một người nào đó, giá trị của món quà không quan trọng bằng việc bạn đã nghĩ đến người đó và muốn làm điều gì cho người đó.</p></p>
 
                                             </div>
-                                            <p> <a class="btn" href="/bi-quyet-tang-qua-y-nghia">Xem chi tiết</a> </p>
+                                            <p> <a class="btn" href="">Xem chi tiết</a> </p>
                                         </div>
                                         <footer class="entry-meta"><time class="entry-date">08/12/2015</time></footer>
                                     </article>
@@ -270,15 +272,15 @@
                                     <article class="blog_entry clearfix" >
                                         <header class="blog_entry-header clearfix">
                                             <div class="blog_entry-header-inner">
-                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="/thuat-phong-thuy-va-qua-tang">Thuật phong thủy và quà tặng</a> </h3>
+                                                <h3 class="blog_entry-title"> <a rel="bookmark" href="">Thuật phong thủy và quà tặng</a> </h3>
                                             </div>
                                             <!--blog_entry-header-inner--> 
                                         </header>
                                         <div class="entry-content">
                                             <div class="featured-thumb">
-                                                <a href="/thuat-phong-thuy-va-qua-tang" title="Thuật phong thủy và quà tặng">
+                                                <a href="" title="Thuật phong thủy và quà tặng">
 
-                                                    <img src="images/url-1.jpg" alt="Thuật phong thủy và quà tặng">
+                                                    <img src="../jsp/images/url-1.jpg" alt="Thuật phong thủy và quà tặng">
 
                                                 </a>
                                             </div>
@@ -287,7 +289,7 @@
                                                 <p><p style="text-align: justify;">Người ta thường có câu: “Của cho không bằng cách cho”, ý nói sự khôn khéo và tinh tế trong giao tiếp là điều quan trọng hơn cả giá trị vật chất mà con người ta dành cho nhau. Và việc tặng quà cũng không là ngoại lệ.</p></p>
 
                                             </div>
-                                            <p> <a class="btn" href="/thuat-phong-thuy-va-qua-tang">Xem chi tiết</a> </p>
+                                            <p> <a class="btn" href="">Xem chi tiết</a> </p>
                                         </div>
                                         <footer class="entry-meta"><time class="entry-date">07/12/2015</time></footer>
                                     </article>
@@ -299,15 +301,7 @@
                                     <div class="pages">
                                         <label>Trang:</label>
                                         <ul class="pagination">
-
-
-
-
                                             <li class="active"><a href="#" style="pointer-events:none">1</a></li>
-
-
-
-
                                         </ul>
                                     </div>
                                 </div>
@@ -322,14 +316,10 @@
                                 <h2 class="widget-title"><span>Tin mới </span></h2>
                                 <div class="widget-content">
                                     <ul class="posts-list unstyled clearfix">
-
                                         <li>
                                             <figure class="featured-thumb" style="width:35%">
-                                                <a href="/tang-qua-gi-de-nguoi-nhan-thich" title="Tặng quà gì để người nhận thích?">
-
-                                                    <img src="images/quasinhnhat1.jpg" style=" width: 100px;" alt="Tặng quà gì để người nhận thích?">
-
-
+                                                <a href="" title="Tặng quà gì để người nhận thích?">
+                                                    <img src="../jsp/images/quasinhnhat1.jpg" style=" width: 100px;" alt="Tặng quà gì để người nhận thích?">
                                                 </a> 
                                             </figure>
                                             <!--featured-thumb-->
@@ -338,14 +328,10 @@
                                                 <time class="entry-date">08/12/2015</time>
                                                 .</p>
                                         </li>
-
                                         <li>
                                             <figure class="featured-thumb" style="width:35%">
-                                                <a href="/10-loai-socola-ngon-nhat-the-gioi" title="10 loại socola ngon nhất thế giới">
-
-                                                    <img src="images/2.jpg" style=" width: 100px;" alt="10 loại socola ngon nhất thế giới">
-
-
+                                                <a href="" title="10 loại socola ngon nhất thế giới">
+                                                    <img src="../jsp/images/2.jpg" style=" width: 100px;" alt="10 loại socola ngon nhất thế giới">
                                                 </a> 
                                             </figure>
                                             <!--featured-thumb-->
@@ -354,14 +340,10 @@
                                                 <time class="entry-date">08/12/2015</time>
                                                 .</p>
                                         </li>
-
                                         <li>
                                             <figure class="featured-thumb" style="width:35%">
-                                                <a href="/goi-y-chon-hoa-lam-qua-tang" title="Gợi ý chọn hoa làm quà tặng">
-
-                                                    <img src="images/hoa-hong-giay-don-gian.jpg" style=" width: 100px;" alt="Gợi ý chọn hoa làm quà tặng">
-
-
+                                                <a href="" title="Gợi ý chọn hoa làm quà tặng">
+                                                    <img src="../jsp/images/hoa-hong-giay-don-gian.jpg" style=" width: 100px;" alt="Gợi ý chọn hoa làm quà tặng">
                                                 </a> 
                                             </figure>
                                             <!--featured-thumb-->
@@ -370,14 +352,10 @@
                                                 <time class="entry-date">08/12/2015</time>
                                                 .</p>
                                         </li>
-
                                         <li>
                                             <figure class="featured-thumb" style="width:35%">
-                                                <a href="/bi-quyet-tang-qua-y-nghia" title="Bí quyết tặng quà ý nghĩa">
-
-                                                    <img src="images/gift-guide.jpg" style=" width: 100px;" alt="Bí quyết tặng quà ý nghĩa">
-
-
+                                                <a href="" title="Bí quyết tặng quà ý nghĩa">
+                                                    <img src="../jsp/images/gift-guide.jpg" style=" width: 100px;" alt="Bí quyết tặng quà ý nghĩa">
                                                 </a> 
                                             </figure>
                                             <!--featured-thumb-->
@@ -386,14 +364,10 @@
                                                 <time class="entry-date">08/12/2015</time>
                                                 .</p>
                                         </li>
-
                                         <li>
                                             <figure class="featured-thumb" style="width:35%">
-                                                <a href="/thuat-phong-thuy-va-qua-tang" title="Thuật phong thủy và quà tặng">
-
-                                                    <img src="images/url-1.jpg" style=" width: 100px;" alt="Thuật phong thủy và quà tặng">
-
-
+                                                <a href="" title="Thuật phong thủy và quà tặng">
+                                                    <img src="../jsp/images/url-1.jpg" style=" width: 100px;" alt="Thuật phong thủy và quà tặng">
                                                 </a> 
                                             </figure>
                                             <!--featured-thumb-->
@@ -402,7 +376,6 @@
                                                 <time class="entry-date">07/12/2015</time>
                                                 .</p>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <!--widget-content--> 
@@ -427,7 +400,7 @@
                             <!-- Banner Ad Block -->
                             <div class="ad-spots widget widget__sidebar">
                                 <h2 class="widget-title"><span>Quảng cáo</span></h2>
-                                <div class="widget-content"><a target="_self" href="#" title=""><img alt="offer banner" src="images/blog-banner.jpg" alt="polo-theme"></a></div>
+                                <div class="widget-content"><a target="_self" href="#" title=""><img alt="offer banner" src="../jsp/images/blog-banner.jpg" alt="polo-theme"></a></div>
                             </div>
                         </div>
                     </div>
@@ -439,7 +412,7 @@
         <jsp:include flush="true" page="footer.jsp"/>
         <!-- End Footer -->
     </div>
-    <script type="text/javascript">
+<!--    <script type="text/javascript">
         Bizweb.updateCartFromForm = function (cart, cart_summary_id, cart_count_id) {
 
             if ((typeof cart_summary_id) === 'string') {
@@ -507,7 +480,7 @@
                 Bizweb.updateCartFromForm(cart, '.shopping_cart');
             });
         });
-    </script>
+    </script>-->
 </body>
 
 </html>

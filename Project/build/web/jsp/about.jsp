@@ -62,6 +62,8 @@
         <!-- Google Fonts -->
         <link href='../jsp/css/font.css' rel='stylesheet' type='text/css'>
         <!-- Header hook for plugins ================================================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
         <script>
             var Bizweb = Bizweb || {};
             Bizweb.store = 'polo-theme.bizwebvietnam.net';
@@ -186,7 +188,7 @@
         <jsp:include flush="true" page="footer.jsp"/>
         <!-- End Footer -->
     </div>
-    <jsp:include flush="true" page="script.jsp"/>
+    <%--<jsp:include flush="true" page="script.jsp"/>--%>
 </body>
 
 </html>

@@ -360,15 +360,37 @@ public class PJModel {
         return listTrademarkNga;
     }
     
-    public static void main(String[] args) {
-        PJModel proModel = new PJModel();
-        List<Product> listPJSaleIteam = proModel.getProductSell();
-        for (Product pro : listPJSaleIteam) {
-            System.out.println("Ma SP: " + pro.getProductName());
-            System.out.println("Ten SP: " + pro.getProductImage());
-            System.out.println("Image: " + pro.getPrice());
-            System.out.println("Image: " + pro.getProductId());
-             
+    public Product getProById(String productId){
+        Connection conn=null;
+        CallableStatement call=null;
+        Product product=new Product();
+        try {
+            conn=PJConnectionDB.openDataBase();
+            call=conn.prepareCall("{call getProById(?)}");
+            call.setString(1,productId);
+            ResultSet rs=call.executeQuery();
+            if(rs.next()){
+                product.setProductId(rs.getString("Ma_san_pham"));
+                product.setProductImage(rs.getString("Hinh_anh"));
+                product.setProductName(rs.getString("Ten_san_pham"));
+                product.setPrice(rs.getFloat("Don_gia"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            PJConnectionDB.closeDataBase(conn, call);
         }
-    }  
+        return product;
+    }
+//    public static void main(String[] args) {
+//        PJModel proModel = new PJModel();
+//        List<Product> listPJSaleIteam = proModel.getProductSell();
+//        for (Product pro : listPJSaleIteam) {
+//            System.out.println("Ma SP: " + pro.getProductName());
+//            System.out.println("Ten SP: " + pro.getProductImage());
+//            System.out.println("Image: " + pro.getPrice());
+//            System.out.println("Image: " + pro.getProductId());
+//             
+//        }
+//    }  
 }

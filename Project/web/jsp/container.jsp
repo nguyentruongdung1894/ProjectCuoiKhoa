@@ -21,7 +21,7 @@
                                 <div class="item">
                                     <div class="col-item">
                                         <div class="product-image-area"> 
-                                            <a class="product-image" title="${pro.productName}" href="/tinh-yeu-ngot-ngao"> 
+                                            <a class="product-image" title="${pro.productName}" href="${pro.productName}"> 
                                                 <img src="${pro.productImage}" class="img-responsive" alt="${pro.productName}" /> 
                                             </a>
                                             <form action="" method="post" class="variants " id="product-actions-830911" enctype="multipart/form-data">

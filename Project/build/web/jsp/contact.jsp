@@ -53,8 +53,8 @@
         <script src='../jsp/js/revslider.js' type='text/javascript'></script>
         <script src='../jsp/js/owl.carousel.min.js' type='text/javascript'></script>
 
-        <script src='../jsp/js/jgrowl.js type='text/javascript'></script>
-        <script src='../jsp/js/api.jquery.jstype='text/javascript'></script>
+        <script src='../jsp/js/jgrowl.js' type='text/javascript'></script>
+        <script src='../jsp/js/api.jquery.js' type='text/javascript'></script>
         <script src='../jsp/js/cs.script.js' type='text/javascript'></script>
         <script src='../jsp/js/main.js' type='text/javascript'></script>
 
@@ -76,6 +76,9 @@
         <!-- Google Fonts -->
         <link href='../jsp/css/font.css' rel='stylesheet' type='text/css'>
         <!-- Header hook for plugins ================================================== -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+        
         <script>
             var Bizweb = Bizweb || {};
             Bizweb.store = 'polo-theme.bizwebvietnam.net';
@@ -244,7 +247,7 @@
     <!-- End Footer -->
 
 </div>
-<script type="text/javascript">
+<!--<script type="text/javascript">
     Bizweb.updateCartFromForm = function (cart, cart_summary_id, cart_count_id) {
 
         if ((typeof cart_summary_id) === 'string') {
@@ -312,7 +315,7 @@
             Bizweb.updateCartFromForm(cart, '.shopping_cart');
         });
     });
-</script>
+</script>-->
 </body>
 
 </html>

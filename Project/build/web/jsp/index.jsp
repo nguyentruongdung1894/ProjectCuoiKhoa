@@ -13,6 +13,7 @@
             <!-- end nav -->
 
             <h1 style="display:none;">polo-theme</h1>
+            
             <!-- Slider -->
             <jsp:include flush="true" page="magik-slideshow.jsp"/>
             <!-- end Slider --> 
