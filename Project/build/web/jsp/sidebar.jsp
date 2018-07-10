@@ -41,24 +41,13 @@
         <div class="block-content">
             <div class="summary">
                 <p class="amount">Đang có <span id="cart-total" >2</span> sản phẩm trong giỏ hàng của bạn.</p>
-                <p class="subtotal"> <span class="label">Tổng tiền:</span> <span class="price total_price">2.050.000₫</span> </p>
+                <p class="subtotal"> <span class="label">Tổng tiền:</span> <span class="price total_price"><%=request.getSession().getAttribute("total")%></span> </p>
             </div>
             <div class="ajax-checkout">
-                <button onclick="window.location = '/checkout'" type="submit" title="Submit" class="button button-checkout"><span>Thanh toán</span></button>
+                <button onclick="window.location = '<%=request.getContextPath()%>/home/checkout.htm'" type="submit" title="Submit" class="button button-checkout"><span>Thanh toán</span></button>
             </div>
             <ul class="shopping_cart style_cart_col">
             </ul>
         </div>
     </div>
-<!--    <div class="block block-tags">
-        <div class="block-title"><span>Tags sản phẩm</span></div>
-        <div class="block-content">
-            <ul class="tags-list">
-                <li><a href='/collections/all/hoa-tuoi' title='hoa-tuoi'>Hoa tươi</a></li>
-                <li><a href='/collections/all/qua-tang' title='qua-tang'>Quà tặng</a></li>
-                <li><a href='/collections/all/socola' title='socola'>Socola</a></li>
-            </ul>
-        </div>
-    </div>-->
-    <div class="block block-banner"><a href="#"><img src="../jsp/images/blog-banner.jpg" alt="block-banner"></a></div>
 </aside>

@@ -87,7 +87,7 @@
                                         <span class="price total_price"><%=request.getSession().getAttribute("total")%></span>
                                     </div>
                                     <div class="actions">
-                                        <a class="btn-checkout" href="/checkout"><span>Thanh toán</span></a>
+                                        <a class="btn-checkout" href="<%=request.getContextPath()%>/home/checkout.htm"><span>Thanh toán</span></a>
                                         <a class="view-cart" href="<%=request.getContextPath()%>/carController/getAllItem.htm"><span>Giỏ hàng</span></a>
                                     </div>
                                 </ul>

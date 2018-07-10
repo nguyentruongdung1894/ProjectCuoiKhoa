@@ -23,7 +23,7 @@
                 <div class="RHS-banner">
                     <div class="add">
                         <a href="1">
-                            <img alt="#" height="463" src="../jsp/images/rhs-banner.jpg" alt="polo-theme">
+                            <img alt="#" height="463" src="../jsp/images/Qc-1.jpg" alt="polo-theme">
                         </a>
                     </div>
                 </div>
