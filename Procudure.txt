@@ -1,3 +1,4 @@
+
 ALTER TABLE dbo.Nha_cung_cap ADD Link VARCHAR(50)
 CREATE PROC getALlProduct
 AS
@@ -43,44 +44,59 @@ BEGIN
 	SELECT * FROM dbo.Danhmuccha p WHERE p.Trang_thai=1 ORDER BY p.Do_uu_tien ASC
 END
 
+--Test: Exec getDmcById 2
+CREATE PROC getDmcById
+@IdDmc INT
+AS
+BEGIN
+	SELECT * FROM dbo.Danhmuccha dmc INNER JOIN dbo.Danhmuccon dm ON dm.Ma_danh_muc = dmc.Ma_danh_muc
+	WHERE dmc.Ma_danh_muc=@IdDmc AND dm.Trang_Thai=1 
+end
+
 CREATE PROC getTrademark
 AS
 BEGIN
 	SELECT * FROM dbo.Nha_cung_cap p
 END
 
-CREATE PROC getTrademarkPhap
+--Test: Exec getId 1
+CREATE PROC getId
+@IdNhcc INT
 AS
 BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Pháp'
+	SELECT * FROM dbo.Nha_cung_cap ncc INNER JOIN dbo.Danhmuccon dmc ON dmc.Ma_nha_cung_cap = ncc.Ma_nha_cung_cap
+	WHERE ncc.Ma_nha_cung_cap=@IdNhcc AND dmc.Trang_Thai=1 ORDER BY ncc.Ma_nha_cung_cap DESC
 END
 
-CREATE PROC getTrademarkMi
+
+--Test: Exec getProById 2
+ALTER PROC getProById
+@productId INT 
 AS
 BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Mi'
+	SELECT * FROM dbo.Danhmuccon p WHERE p.Trang_Thai=1 AND p.Ma_san_pham=@productId
 END
 
-CREATE PROC getTrademarkAnh
+
+--Test: Exec Pagination 1,3
+CREATE PROC Pagination
+--Ðang ? trang th? bao nhiêu
+@PageIndex INT,
+--S? b?n ghi t?i da trên 1 trang
+@PageSize INT
 AS
 BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Anh'
+--Xác d?nh hi?n th? t? x-> y
+	DECLARE @FromIndex INT , @ToIndex INT
+	SET @FromIndex=(@PageIndex-1)*@PageSize+1
+	SET @ToIndex=@PageIndex*@PageSize
+
+	SELECT * 
+	FROM(SELECT p.Ma_san_pham,p.Ten_san_pham,p.Hinh_anh,p.Don_gia,
+	ROW_NUMBER() OVER(ORDER BY p.Ngay_Nhap DESC) AS RowIndex
+	FROM dbo.Danhmuccon p) AS tblDemo
+	WHERE  tblDemo.RowIndex BETWEEN @FromIndex AND @ToIndex
 END
 
-CREATE PROC getTrademarkDuc
-AS
-BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Ð?c'
-END
 
-CREATE PROC getTrademarkTayBanNha
-AS
-BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Tây Ban Nha'
-END
 
-CREATE PROC getTrademarkNga
-AS
-BEGIN
-	SELECT * FROM dbo.Danhmuccon p INNER JOIN dbo.Nha_cung_cap ncc ON ncc.Ma_nha_cung_cap = p.Ma_nha_cung_cap WHERE ncc.Ten_nha_cung_cap =N'Nga'
-END
