@@ -45,7 +45,7 @@
                 <li class="level0 parent drop-menu"><a href="product.htm"><span>Sản phẩm</span></a>
                     <ul class="level1">
                         <c:forEach items="${listProductParent}" var="pro">
-                            <li class="level1 first parent"><a href="${pro.link}"><span>${pro.parentName}</span></a></li>
+                            <li class="level1 first parent"><a href="<%=request.getContextPath()%>/home/getProductParentsById.htm?TrademarkById=${pro.parentId}"><span>${pro.parentName}</span></a></li>
                                     </c:forEach>                      
                     </ul>
                 </li>

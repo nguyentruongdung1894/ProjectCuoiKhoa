@@ -1,3 +1,4 @@
+
 <%@page import="bkap.Entity.Item"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -43,27 +44,21 @@
                 <!-- End Search-col --> 
             </div>
             <!-- Top Cart -->
-            <%
-                Item item=new Item();
-            %>
             <div class="col-lg-2 col-sm-3 col-md-2">
                 <div class="top-cart-contain">
                     <div class="mini-cart" id="open_shopping_cart">
                         <div data-hover="dropdown" class="basket dropdown-toggle"> 
                             <a href="<%=request.getContextPath()%>/carController/getAllItem.htm"> 
                                 <i class="glyphicon glyphicon-shopping-cart"></i>
-                                <div class="cart-box">
-                                    <span class="title">Giỏ hàng</span>
-                                    <span id="cart-total"><%=item.getQuantity()%></span>
-                                </div>
+                                <div class="cart-box"><span class="title">Giỏ hàng</span><span id="cart-total">${count}</span></div>
                             </a>
                         </div>
 
                         <div class="top-cart-content arrow_box" style="display: none;">
-                            
-                                <ul id="cart-sidebar" class="mini-products-list shopping_cart">
-                                    <div class="block-subtitle" style="color: red;">Sản phẩm đã cho vào giỏ hàng</div>
-                                    <c:forEach items="<%=request.getSession().getAttribute("listItem")%>" var="cart">
+
+                            <ul id="cart-sidebar" class="mini-products-list shopping_cart">
+                                <div class="block-subtitle" style="color: red;">Sản phẩm đã cho vào giỏ hàng</div>
+                                <c:forEach items="<%=request.getSession().getAttribute("listItem")%>" var="cart">
                                     <li class="item even"> 
                                         <a class="product-image" href="">
                                             <img src="${cart.product.productImage}" width="80">
@@ -81,17 +76,17 @@
                                                 <strong>${cart.quantity}</strong> 
                                             </div>
                                         </div>
-                                    </li> 
-                                    </c:forEach>
-                                    <div class="top-subtotal">Tổng tiền: 
-                                        <span class="price total_price"><%=request.getSession().getAttribute("total")%></span>
-                                    </div>
-                                    <div class="actions">
-                                        <a class="btn-checkout" href="<%=request.getContextPath()%>/home/checkout.htm"><span>Thanh toán</span></a>
-                                        <a class="view-cart" href="<%=request.getContextPath()%>/carController/getAllItem.htm"><span>Giỏ hàng</span></a>
-                                    </div>
-                                </ul>
-                            
+                                    </li>                                                 
+                                </c:forEach>
+                                <div class="top-subtotal">Tổng tiền: 
+                                    <span class="price total_price">${total}</span>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn-checkout" href="<%=request.getContextPath()%>/home/checkout.htm"><span>Thanh toán</span></a>
+                                    <a class="view-cart" href="<%=request.getContextPath()%>/carController/getAllItem.htm"><span>Giỏ hàng</span></a>
+                                </div>
+                            </ul>
+
                         </div>
 
 

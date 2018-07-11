@@ -55,7 +55,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 ProductParent pro=new ProductParent();
-                pro.setParentId(rs.getString("Ma_danh_muc"));
+                pro.setParentId(rs.getInt("Ma_danh_muc"));
                 pro.setParentName(rs.getString("Ten_danh_muc"));
                 pro.setDouutien(rs.getInt("Do_uu_tien"));
                 pro.setLink(rs.getString("Link"));
@@ -80,7 +80,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
+                pro.setProductId(rs.getInt("Ma_san_pham"));
                 pro.setProductImage(rs.getString("Hinh_anh"));
                 pro.setProductName(rs.getString("Ten_san_pham"));
                 pro.setPrice(rs.getFloat("Don_gia"));               
@@ -104,7 +104,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
+                pro.setProductId(rs.getInt("Ma_san_pham"));
                 pro.setProductImage(rs.getString("Hinh_anh"));
                 pro.setProductName(rs.getString("Ten_san_pham"));
                 pro.setPrice(rs.getFloat("Don_gia"));
@@ -128,7 +128,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
+                pro.setProductId(rs.getInt("Ma_san_pham"));
                 pro.setProductImage(rs.getString("Hinh_anh"));
                 pro.setProductName(rs.getString("Ten_san_pham"));
                 pro.setPrice(rs.getFloat("Don_gia"));
@@ -152,7 +152,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
+                pro.setProductId(rs.getInt("Ma_san_pham"));
                 pro.setProductImage(rs.getString("Hinh_anh"));
                 pro.setProductName(rs.getString("Ten_san_pham"));
                 pro.setPrice(rs.getFloat("Don_gia"));
@@ -176,7 +176,7 @@ public class PJModel {
             ResultSet rs=call.executeQuery();
             while(rs.next()){
                 Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
+                pro.setProductId(rs.getInt("Ma_san_pham"));
                 pro.setProductImage(rs.getString("Hinh_anh"));
                 pro.setProductName(rs.getString("Ten_san_pham"));
                 pro.setPrice(rs.getFloat("Don_gia"));
@@ -205,7 +205,6 @@ public class PJModel {
                 pro.setSupplierAdress(rs.getString("Dia_chi"));
                 pro.setSupplierPhonel(rs.getInt("So_dien_thoai"));
                 pro.setFax(rs.getString("So_fax"));
-                pro.setLink(rs.getString("Link"));
                 listTrademark.add(pro);
             }
         } catch (Exception e) {
@@ -216,161 +215,17 @@ public class PJModel {
         return listTrademark;
     }
     
-    public List<Product> getTrademarkPhap(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkPhap=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkPhap()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkPhap.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkPhap;
-    }
-    
-    public List<Product> getTrademarkMi(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkMi=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkMi()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkMi.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkMi;
-    }
-    
-    public List<Product> getTrademarkAnh(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkAnh=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkAnh()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkAnh.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkAnh;
-    }
-    
-    public List<Product> getTrademarkDuc(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkDuc=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkDuc()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkDuc.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkDuc;
-    }
-    
-    public List<Product> getTrademarkTayBanNha(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkTayBanNha=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkTayBanNha()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkTayBanNha.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkTayBanNha;
-    }
-    
-    public List<Product> getTrademarkNga(){
-        Connection conn=null;
-        CallableStatement call=null;
-        List<Product> listTrademarkNga=new ArrayList<>();
-        try {
-            conn=PJConnectionDB.openDataBase();
-            call=conn.prepareCall("{call getTrademarkNga()}");
-            ResultSet rs=call.executeQuery();
-            while(rs.next()){
-                Product pro=new Product();
-                pro.setProductId(rs.getString("Ma_san_pham"));
-                pro.setProductImage(rs.getString("Hinh_anh"));
-                pro.setProductName(rs.getString("Ten_san_pham"));
-                pro.setPrice(rs.getFloat("Don_gia"));                
-                listTrademarkNga.add(pro);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            PJConnectionDB.closeDataBase(conn, call);
-        }
-        return listTrademarkNga;
-    }
-    
-    public Product getProById(String productId){
+    public Product getProById(int productId){
         Connection conn=null;
         CallableStatement call=null;
         Product product=new Product();
         try {
             conn=PJConnectionDB.openDataBase();
             call=conn.prepareCall("{call getProById(?)}");
-            call.setString(1,productId);
+            call.setInt(1,productId);
             ResultSet rs=call.executeQuery();
             if(rs.next()){
-                product.setProductId(rs.getString("Ma_san_pham"));
+                product.setProductId(rs.getInt("Ma_san_pham"));
                 product.setProductImage(rs.getString("Hinh_anh"));
                 product.setProductName(rs.getString("Ten_san_pham"));
                 product.setPrice(rs.getFloat("Don_gia"));
@@ -381,6 +236,56 @@ public class PJModel {
             PJConnectionDB.closeDataBase(conn, call);
         }
         return product;
+    }
+    
+    public List<Product> getTrademarkById(int TrademarkById){
+        Connection conn=null;
+        CallableStatement call=null;
+        List<Product> listproductTrademar=new ArrayList<>();
+        try {
+            conn=PJConnectionDB.openDataBase();
+            call=conn.prepareCall("{call getId(?)}");
+            call.setInt(1,TrademarkById);
+            ResultSet rs=call.executeQuery();
+            while(rs.next()){
+                Product productTrademar=new Product();
+                productTrademar.setProductId(rs.getInt("Ma_san_pham"));
+                productTrademar.setProductImage(rs.getString("Hinh_anh"));
+                productTrademar.setProductName(rs.getString("Ten_san_pham"));
+                productTrademar.setPrice(rs.getFloat("Don_gia"));
+                listproductTrademar.add(productTrademar);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            PJConnectionDB.closeDataBase(conn, call);
+        }
+        return listproductTrademar;
+    }
+    
+    public List<Product> getProductParentById(int TrademarkById){
+        Connection conn=null;
+        CallableStatement call=null;
+        List<Product> listproductParentById=new ArrayList<>();
+        try {
+            conn=PJConnectionDB.openDataBase();
+            call=conn.prepareCall("{call getDmcById(?)}");
+            call.setInt(1,TrademarkById);
+            ResultSet rs=call.executeQuery();
+            while(rs.next()){
+                Product productParentById=new Product();
+                productParentById.setProductId(rs.getInt("Ma_san_pham"));
+                productParentById.setProductImage(rs.getString("Hinh_anh"));
+                productParentById.setProductName(rs.getString("Ten_san_pham"));
+                productParentById.setPrice(rs.getFloat("Don_gia"));
+                listproductParentById.add(productParentById);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            PJConnectionDB.closeDataBase(conn, call);
+        }
+        return listproductParentById;
     }
 //    public static void main(String[] args) {
 //        PJModel proModel = new PJModel();

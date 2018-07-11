@@ -30,9 +30,9 @@
             <div class="offer-banner-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-xs-12 col-sm-4"><a href="#"><img alt="#" src="../jsp/images/banner_line1.jpg"></a>
+                        <div class="col-lg-4 col-xs-12 col-sm-4"><a href="#"><img alt="#" src=""></a>
                         </div>
-                        <div class="col-lg-8 col-xs-12 col-sm-8"><a href="#"><img alt="#" src="../jsp/images/banner_line2.jpg"></a>
+                        <div class="col-lg-8 col-xs-12 col-sm-8"><a href="#"><img alt="#" src=""></a>
                         </div>
                     </div>
                 </div>
@@ -53,21 +53,21 @@
                     <h2><span>Tin tức</span></h2>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="blog-img"> <a href="/tang-qua-gi-de-nguoi-nhan-thich"><img src="../jsp/images/quasinhnhat1.jpg" alt="Tặng quà gì để người nhận thích?"/></a>
+                    <div class="blog-img"> <a href="/tang-qua-gi-de-nguoi-nhan-thich"><img src="" alt="Tặng quà gì để người nhận thích?"/></a>
                     </div>
                     <h3><a href="/tang-qua-gi-de-nguoi-nhan-thich">Tặng quà gì để người nhận thích?</a></h3>
                     <div class="post-date"><i class="icon-calendar"></i>08/12/2015</div>
                     <p><p style="text-align: justify;">Tặng quà không có nghĩa là đem nó cho người nhận mà không hề quan tâm đến sở thích của người ấy, nó là cả một nghệ thuật mà bạn cần dành thời gian để suy nghĩ, lựa chọn, tìm hiểu về tính cách và hoàn cảnh sống của người nhận.</p></p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="blog-img"> <a href="/10-loai-socola-ngon-nhat-the-gioi"><img src="../jsp/images/2.jpg" alt="10 loại socola ngon nhất thế giới"/></a>
+                    <div class="blog-img"> <a href="/10-loai-socola-ngon-nhat-the-gioi"><img src="" alt="10 loại socola ngon nhất thế giới"/></a>
                     </div>
                     <h3><a href="/10-loai-socola-ngon-nhat-the-gioi">10 loại socola ngon nhất thế giới</a></h3>
                     <div class="post-date"><i class="icon-calendar"></i>08/12/2015</div>
                     <p><p style="text-align: justify;">Từ những thanh chocolate đen nguyên chất, cho tới kẹo chocolate có nhân rượu màu, hay những thỏi chocolate đắng, tất cả đều ngon đến ngỡ ngàng. Bạn sẽ chẳng bao giờ hối tiếc khi lỡ đam mê các loại bánh kẹo của những hãng này.</p></p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="blog-img"> <a href="/goi-y-chon-hoa-lam-qua-tang"><img src="../jsp/images/hoa-hong-giay-don-gian.jpg" alt="Gợi ý chọn hoa làm quà tặng"/></a>
+                    <div class="blog-img"> <a href="/goi-y-chon-hoa-lam-qua-tang"><img src="" alt="Gợi ý chọn hoa làm quà tặng"/></a>
                     </div>
                     <h3><a href="/goi-y-chon-hoa-lam-qua-tang">Gợi ý chọn hoa làm quà tặng</a></h3>
                     <div class="post-date"><i class="icon-calendar"></i>08/12/2015</div>

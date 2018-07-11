@@ -98,7 +98,7 @@
                                                     <a class="product-image" title="${pro.productName}" href=""> 
                                                         <img src="${pro.productImage}" class="img-responsive" alt="${pro.productName}" /> 
                                                     </a>
-                                                    <form action="" method="post" class="variants " id="product-actions-893897" enctype="multipart/form-data">
+                                                    <form action="" method="post" class="variants" id="product-actions-893897" enctype="multipart/form-data">
                                                         <div class="hover_fly">
                                                             <a class="exclusive ajax_add_to_cart_button btn-cart add_to_cart" href="<%=request.getContextPath()%>/carController/addCart.htm?productId=${pro.productId}" title="Cho vào giỏ hàng">
                                                                 <div><i class="icon-shopping-cart"></i><span>Cho vào giỏ hàng</span></div>

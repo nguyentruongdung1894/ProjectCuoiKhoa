@@ -10,7 +10,7 @@ package bkap.Entity;
  * @author ScorPius 31
  */
 public class ProductParent {
-    private String parentId;
+    private int parentId;
     private String parentName;
     private int douutien;
     private String link;
@@ -19,7 +19,7 @@ public class ProductParent {
     public ProductParent() {
     }
 
-    public ProductParent(String parentId, String parentName, int douutien, String link, boolean status) {
+    public ProductParent(int parentId, String parentName, int douutien, String link, boolean status) {
         this.parentId = parentId;
         this.parentName = parentName;
         this.douutien = douutien;
@@ -29,11 +29,11 @@ public class ProductParent {
 
     
 
-    public String getParentId() {
+    public int getParentId() {
         return parentId;
     }
 
-    public void setParentId(String parentId) {
+    public void setParentId(int parentId) {
         this.parentId = parentId;
     }
 

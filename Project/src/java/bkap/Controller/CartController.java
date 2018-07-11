@@ -36,7 +36,7 @@ public class CartController {
         return model;     
     }
     @RequestMapping(value = "/addCart")
-    public ModelAndView addCart(String productId, HttpSession session) {
+    public ModelAndView addCart(int productId, HttpSession session) {
         ModelAndView model = new ModelAndView("cart");
         List<Item> listItem = (List<Item>) session.getAttribute("listItem");
         if (listItem == null) {
@@ -48,7 +48,7 @@ public class CartController {
             boolean flag = false;
             for (Item c : listItem) {
                 // Kiểm tra xem sản phẩm thêm vào đã có trong giỏ hàng chưa
-                if (c.getProduct().getProductId().equals(productId)) {
+                if (c.getProduct().getProductId()==(productId)) {
                     // Sản phẩm đã có trong giỏ hàng ta tăng biến số lượng
                     int a = c.getQuantity();
                     c.setQuantity(a + 1);
@@ -60,11 +60,14 @@ public class CartController {
             if (!flag) {
                 listItem.add(new Item(pjmodel.getProById(productId), 1));
             }
+            
         }
         // set giỏ hàng lên session
         session.setAttribute("listItem", listItem);
         // set tổng tiền lên session
         session.setAttribute("total", getTotal(listItem));
+        //Tinh lai so san pham trong gio hang
+        session.setAttribute("count", listItem.size());
         return model;
     }
 
@@ -79,13 +82,13 @@ public class CartController {
 
     //xóa sản phẩm trong giỏ hàng
     @RequestMapping(value = "/remove", method = RequestMethod.GET)
-    public ModelAndView remove(@RequestParam("productId") String productId, HttpSession session) {
+    public ModelAndView remove(@RequestParam("productId") int productId, HttpSession session) {
         ModelAndView model = new ModelAndView("cart");
         // lấy danh sách sản phẩm trên sesion
         List<Item> listItem = (List<Item>) session.getAttribute("listItem");
         if (listItem != null) {
             for (int i = 0; i < listItem.size(); i++) {
-                if (listItem.get(i).getProduct().getProductId().equals(productId)){
+                if (listItem.get(i).getProduct().getProductId()==(productId)){
                     // neu sp ton tai thi remove
                     listItem.remove(i).getProduct().getProductId();
                     break;
@@ -95,6 +98,7 @@ public class CartController {
         // luu danh sách sản phẩm và tổng tiền
         session.setAttribute("listItem", listItem);
         session.setAttribute("total", getTotal(listItem));
+        session.setAttribute("count", listItem.size());
         return model;
     }
 //    // sửa sản phẩm trong giỏ hàng
@@ -117,6 +121,7 @@ public class CartController {
         // luu danh sách sản phẩm và tổng tiền lên session
         session.setAttribute("listItem", listItem);
         session.setAttribute("total", getTotal(listItem));
+        session.setAttribute("count", listItem.size());
         return model;
     }
 //    // Xóa toàn bộ giỏ hàng
@@ -125,6 +130,7 @@ public class CartController {
     public ModelAndView myCart(HttpSession session) {
         ModelAndView model = new ModelAndView("cart");
         session.removeAttribute("listItem");
+        session.setAttribute("count", 0);
         return model;
     }
 }

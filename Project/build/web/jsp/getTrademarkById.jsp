@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                                 <ul class="products-grid hidden_btn_cart">
-                                    <c:forEach items="${listproductAoVetNam}" var="pro">
+                                    <c:forEach items="${listTrademarkById}" var="pro">
                                         <li class="item col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                             <div class="col-item">
                                                 <div class="product-image-area"> 

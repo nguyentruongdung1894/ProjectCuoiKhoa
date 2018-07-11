@@ -12,7 +12,7 @@ import java.sql.Date;
  * @author ScorPius 31
  */
 public class Product {
-    private String productId;
+    private int productId;
     private String categoryId;
     private String productName;
     private String productImage;
@@ -30,7 +30,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(String productId, String categoryId, String productName, String productImage, String imageId, int quantity, String description, float price, String saleId, int view, String supplier, Date date, int sex, boolean status) {
+    public Product(int productId, String categoryId, String productName, String productImage, String imageId, int quantity, String description, float price, String saleId, int view, String supplier, Date date, int sex, boolean status) {
         this.productId = productId;
         this.categoryId = categoryId;
         this.productName = productName;
@@ -49,11 +49,11 @@ public class Product {
 
     
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 

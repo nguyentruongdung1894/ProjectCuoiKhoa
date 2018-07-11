@@ -15,29 +15,17 @@ public class Trademark {
     private String supplierAdress;
     private int supplierPhonel;
     private String fax;
-    private String link;
 
     public Trademark() {
     }
 
-    public Trademark(String supplierId, String supplierName, String supplierAdress, int supplierPhonel, String fax, String link) {
+    public Trademark(String supplierId, String supplierName, String supplierAdress, int supplierPhonel, String fax) {
         this.supplierId = supplierId;
         this.supplierName = supplierName;
         this.supplierAdress = supplierAdress;
         this.supplierPhonel = supplierPhonel;
         this.fax = fax;
-        this.link = link;
-    }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    
+    }  
 
     public String getSupplierId() {
         return supplierId;

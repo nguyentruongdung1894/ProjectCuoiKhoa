@@ -15,7 +15,7 @@
         <div class="box-content box-category">
             <ul>
                 <c:forEach items="${listProductParent}" var="pro">
-                    <li> <a  href="${pro.link}">${pro.parentName}</a> </li>          
+                    <li> <a href="<%=request.getContextPath()%>/home/getProductParentsById.htm?TrademarkById=${pro.parentId}">${pro.parentName}</a></li>          
                 </c:forEach>                 
             </ul>
         </div>
@@ -29,7 +29,7 @@
                 <dd class="even">
                     <ol>
                         <c:forEach items="${listTrademark}" var="pro">
-                            <li><a href='${pro.link}' title='${pro.supplierName}'>${pro.supplierName}</a></li>
+                            <li><a href='<%=request.getContextPath()%>/home/getTrademarkById.htm?TrademarkById=${pro.supplierId}' title='${pro.supplierName}'>${pro.supplierName}</a></li>
                         </c:forEach>                                             
                     </ol>
                 </dd>
